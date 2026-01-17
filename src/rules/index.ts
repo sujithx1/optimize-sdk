@@ -1,8 +1,9 @@
-import { perfRules } from "./performance.js";
-import { securityRules } from "./security.js";
+import { perfRules } from "./performance";
+import { securityRules } from "./security";
+import { typeRules } from "./type";
 
 export async function runRules(files: string[]) {
-  const all = [...perfRules, ...securityRules];
+  const all = [...perfRules, ...securityRules, ...typeRules];
   const issues: any[] = [];
 
   for (const file of files) {

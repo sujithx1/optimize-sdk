@@ -1,25 +1,22 @@
 {
-
-
-  "name": "sdk-server",
+"name": "@sujithx1/optimizeguard",
   "version": "1.0.0",
   "type": "module",
-
-    "bin": { "optimizeguard": "dist/cli.js" },
-
+  
+  "bin": {
+    "optimizeguard": "src/cli.ts"
+  },
   "scripts": {
-    "build": "bun build src/cli.ts --outdir dist",
+    "build": "bun build src/cli.ts --outdir dist --target bun",
     "dev": "bun src/cli.ts"
   },
   "dependencies": {
-    "hono": "^4.11.4",
-     "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
     "esbuild": "^0.20.0",
-    "glob": "^10.3.10"
+    "glob": "^10.3.10",
+    "hono": "^4.11.4"
   },
   "devDependencies": {
     "@types/bun": "latest"
   }
 }
-
-
