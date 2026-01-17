@@ -1,7 +1,15 @@
 {
   "compilerOptions": {
+    "target": "ES2022",          // modern JS for top-level await
+    "module": "ESNext",          // allows top-level await
+    "moduleResolution": "Node",
     "strict": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
-  }
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "dist"
+  },
+  "include": ["src"]
 }

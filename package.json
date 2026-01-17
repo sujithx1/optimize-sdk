@@ -1,12 +1,25 @@
 {
+
+
   "name": "sdk-server",
+  "version": "1.0.0",
+  "type": "module",
+
+    "bin": { "optimizeguard": "dist/cli.js" },
+
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "build": "bun build src/cli.ts --outdir dist",
+    "dev": "bun src/cli.ts"
   },
   "dependencies": {
-    "hono": "^4.11.4"
+    "hono": "^4.11.4",
+     "@typescript-eslint/parser": "^7.0.0",
+    "esbuild": "^0.20.0",
+    "glob": "^10.3.10"
   },
   "devDependencies": {
     "@types/bun": "latest"
   }
 }
+
+
