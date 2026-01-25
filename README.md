@@ -43,3 +43,27 @@ OptimizeGuard catches them **early**, right on your machine.
 ```bash
 npm install -g @sujithx1/optimizeguard
 
+
+▶️ Usage
+optimizeguard
+
+Example output
+❌ OptimizeGuard failed
+
+• Performance issue: await inside loop (src/api/user.ts)
+• Type issue: usage of 'any' (src/services/auth.ts)
+
+Fix the issues and try again.
+
+
+If everything is good:
+✅ OptimizeGuard passed
+Your code is optimized and safe to commit 🎉
+
+
+🔗 Use as Pre-Commit Hook (Recommended)
+
+Automatically block bad commits.
+npx husky add .husky/pre-commit "optimizeguard"
+
+
