@@ -1,11 +1,45 @@
-To install dependencies:
-```sh
-bun install
-```
+# 🚀 OptimizeGuard
 
-To run:
-```sh
-bun run dev
-```
+OptimizeGuard is a lightweight **code optimization guard** that helps developers check whether their code is **optimized, safe, and type-correct before committing or pushing**.
 
-open http://localhost:3000
+It runs with **one simple command** and gives **clear, human-readable feedback** — no complex setup needed.
+
+---
+
+## 🌟 Why OptimizeGuard?
+
+Many code issues are found **after pushing** or during **code review**.
+OptimizeGuard catches them **early**, right on your machine.
+
+✔ Faster feedback  
+✔ Cleaner commits  
+✔ Better code quality  
+✔ Developer-friendly output  
+
+---
+
+## 🔍 What does it check?
+
+### ⚡ Performance
+- `await` inside loops
+- Blocking or inefficient patterns
+
+### 🧠 Type Safety
+- Usage of `any`
+- Unsafe or missing TypeScript types
+
+### 🔐 Security
+- Hardcoded secrets
+- `eval()` and unsafe executions
+
+### 🧹 Code Quality
+- Common anti-patterns
+- Unoptimized logic hints
+
+---
+
+## 📦 Installation
+
+```bash
+npm install -g @sujithx1/optimizeguard
+
